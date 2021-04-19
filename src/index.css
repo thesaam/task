@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Zen+Dots&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color : #c5c1c1;
+  --pure-color : #fff;
+  --danger: red;
+  --font-color: #888888;
+}
+
+body {
+  background: #fff;
+  padding: 0px 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+
+}
+
+.header .logo {
+  font-family: 'Zen Dots', cursive;
+  color: rgb(240, 93, 166);
+  display: flex;
+  align-items: center;
+}
+
+.header .icons {
+  margin-top: 5px;
+  background: #fff;
+  display: flex;
+  color: var(--danger); 
+  text-align: center;
+}
+
+.wallet {
+  display: flex;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background: rgb(240, 93, 166);
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0px 5px 10px #888888, -0px -5px 10px #888888;
+  margin-bottom: 40px;
+}
+
+.wallet .left {
+  flex-basis: 50%;
+  text-align: center;
+  padding: 10px;
+  border-right: 2px #fff solid;
+}
+
+.wallet .right {
+  flex-basis: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.wallet .circle {
+  background: #fff;
+  padding-top: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.wallet .left h2 {
+  color: rgb(240, 93, 166);
+}
+
+.wallet .right h2 {
+  color: #25abff;
+}
+
+.select h2 {
+  background: #b9b9b9;
+  color: #25abff;
+  padding: 25px 0px 10px 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+.inputarea {
+  background: #888888;
+  margin: 10px 10px 10px 0px;
+  display: flex;
+  align-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.inputarea label {
+  background: var(--primary-color);
+  padding: 10px;
+  color: var(--font-color);
+  flex-basis: 20%;
+  font-weight: 700;
+}
+
+.inputarea label i {
+  color: #fff;
+  padding: 0px 5px;
+}
+
+.inputarea input {
+  background: #f4f4f4;
+  color: #888888;
+  flex-basis: 80%;
+  padding: 0px 10px;
+  border: 2px #888888 solid;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-contain {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.btn {
+  padding: 15px 40px;
+  margin: 10px auto;
+  border: none;
+  font-weight: 600;
+  background: #26abff;
+  color: var(--pure-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: #0a7bc2;
+}
+
+.active {
+  margin-top: 20px;
+}
+
+.active h2{
+  background: var(--primary-color);
+  color: var(--pure-color);
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: var(--font-color);
+  font-weight: 700;
+  border-bottom: 1px var(--primary-color) solid;
+}
+
+.space {
+  width: 100%;
+  height: 30px;
+  background: var(--primary-color);
+  padding: 10px;
+  margin: 5px 0px;
+}
+.line {
+  padding-top: 5px;
+  border-top: 1px var(--primary-color) solid;
+}
+
+.menu-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color);
+  opacity: 0.5;
+  text-align: center;
+}
+
+.menu-icons i {
+  color: var(--danger);
+  padding: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu-icons i :hover {
+  display: none;
+}
+
+.menu-icons a {
+  text-decoration: none;
+  color: rgb(240, 93, 166);
+  font-weight: 700;
+}
+
+.activitymain,
+.marketmain,
+.earnmain,
+.walletmain {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(240, 93, 166);;
+  margin: auto;
+}
+
+
+
+
+
+
