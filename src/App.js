@@ -22,7 +22,7 @@ function App() {
                   < Select />
                   <Button />
                   <Activity />
-                  <Menu />
+                  
                 </Route>
                 <Route path="/activitymain">
                   <Activitymain />
@@ -38,6 +38,7 @@ function App() {
                 </Route> 
               </Switch>
           </div>
+          <Menu />
       </div>
     </Router>
       

@@ -27,12 +27,22 @@ const Menu = () => {
     <div className="menu">
       <div className="space"></div>
       <div className="line">
-        <div className="menu-icons">
-          <Link onClick={handleClick} className="current" to="/"><i class="fas fa-home"></i>Home</Link>
-          <Link onClick={handleClick0} to="/activitymain"><i class="far fa-list-alt"></i>Activity</Link>
-          <Link onClick={handleClick1} to="/walletmain"><i class="fas fa-wallet"></i>Wallet</Link>
-          <Link onClick={handleClick2} to="/marketmain"><i class="fas fa-mail-bulk"></i>Market</Link>
-          <Link onClick={handleClick3} to="/earnmain"><i class="fas fa-gift"></i>Earn</Link>
+        <div className="menu-icon">
+          <div className="menu-icons current">
+            <Link onClick={handleClick} className="current" to="/"><i class="fas fa-home current"></i><br/>Home</Link>
+          </div>
+          <div className="menu-icons">
+            <Link onClick={handleClick0} to="/activitymain"><i class="far fa-list-alt"></i><br/>Activity</Link>
+          </div>
+          <div className="menu-icons">
+            <Link onClick={handleClick1} to="/walletmain"><i class="fas fa-wallet"></i><br/>Wallet</Link>
+          </div>
+          <div className="menu-icons">
+            <Link onClick={handleClick2} to="/marketmain"><i class="fas fa-mail-bulk"></i><br/>Market</Link>
+          </div>
+          <div className="menu-icons">
+            <Link onClick={handleClick3} to="/earnmain"><i class="fas fa-gift"></i><br/>Earn</Link>
+          </div>
         </div>
       </div>
     </div>

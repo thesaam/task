@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Zen+Dots&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -19,21 +17,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 10px 20px;
-  margin-bottom: 10px;
-
+  margin-bottom: 3px;
 }
 
 .header .logo {
-  font-family: 'Zen Dots', cursive;
-  color: rgb(240, 93, 166);
-  display: flex;
-  align-items: center;
+  color: #000;
+  font-size: bold;
+  border: 2px #000 solid;
+  padding: 0.2rem 2rem;
 }
 
 .header .icons {
@@ -45,53 +47,24 @@ body {
 }
 
 .wallet {
-  display: flex;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  background: rgb(240, 93, 166);
+  background: rgb(212, 211, 211);
   padding: 10px 20px;
-  justify-content: space-between;
-  align-content: center;
   text-align: center;
   border-radius: 15px;
-  color: #fff;
+  color: #000;
   box-shadow: 0px 5px 10px #888888, -0px -5px 10px #888888;
   margin-bottom: 40px;
 }
 
-.wallet .left {
-  flex-basis: 50%;
-  text-align: center;
+.wallet h2 {
   padding: 10px;
-  border-right: 2px #fff solid;
-}
-
-.wallet .right {
-  flex-basis: 50%;
-  text-align: center;
-  padding: 10px;
-}
-
-.wallet .circle {
-  background: #fff;
-  padding-top: 20px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: auto;
-}
-
-.wallet .left h2 {
-  color: rgb(240, 93, 166);
-}
-
-.wallet .right h2 {
-  color: #25abff;
 }
 
 .select h2 {
-  background: #b9b9b9;
+  background: #f4f4f4;
   color: #25abff;
   padding: 25px 0px 10px 5px;
   font-size: 1.2rem;
@@ -99,9 +72,8 @@ body {
   margin-bottom: 15px;
 }
 
-
 .inputarea {
-  background: #888888;
+  background: #f4f4f4;
   margin: 10px 10px 10px 0px;
   display: flex;
   align-content: center;
@@ -110,24 +82,19 @@ body {
 }
 
 .inputarea label {
-  background: var(--primary-color);
   padding: 10px;
-  color: var(--font-color);
-  flex-basis: 20%;
+  color: #000;
+  flex-basis: 10%;
   font-weight: 700;
-}
-
-.inputarea label i {
-  color: #fff;
-  padding: 0px 5px;
+  border: 2px #888 solid;
 }
 
 .inputarea input {
   background: #f4f4f4;
   color: #888888;
-  flex-basis: 80%;
-  padding: 0px 10px;
-  border: 2px #888888 solid;
+  flex-basis: 90%;
+  padding: 0px 10px; 
+  border: 2px #c7c7c7 solid;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -144,7 +111,7 @@ body {
   border: none;
   font-weight: 600;
   background: #26abff;
-  color: var(--pure-color);
+  color: #e7e6e6;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -153,11 +120,11 @@ body {
   background: #0a7bc2;
 }
 
-.active {
+.act {
   margin-top: 20px;
 }
 
-.active h2{
+.act h2{
   background: var(--primary-color);
   color: var(--pure-color);
   padding: 10px;
@@ -165,14 +132,19 @@ body {
   font-weight: 600;
 }
 
+.active {
+  border: 1px #000 solid;
+  background: #dddddd;
+}
+
 .activity {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  color: var(--font-color);
+  color: #000;
+  text-align: center;
   font-weight: 700;
-  border-bottom: 1px var(--primary-color) solid;
 }
 
 .space {
@@ -187,13 +159,23 @@ body {
   border-top: 1px var(--primary-color) solid;
 }
 
-.menu-icons {
+.menu {
+  position: relative;
+  bottom: 0;
+}
+
+.menu-icon {
   width: 100%;
+  text-align: center;
   display: flex;
   justify-content: space-between;
-  background: var(--primary-color);
-  opacity: 0.5;
-  text-align: center;
+  background: var(--pure-color);
+  position: relative;
+  padding: 10px;
+}
+
+.menu-icons {
+  opacity: 0.4;
 }
 
 .menu-icons i {
@@ -201,10 +183,6 @@ body {
   padding: 10px;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.menu-icons i :hover {
-  display: none;
 }
 
 .menu-icons a {
@@ -219,10 +197,16 @@ body {
 .walletmain {
   font-size: 2rem;
   text-align: center;
-  color: rgb(240, 93, 166);;
-  margin: auto;
+  color: rgb(240, 93, 166);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+.menu-icons:active {
+  opacity: 1;
+}
 
 
 
